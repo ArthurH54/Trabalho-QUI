@@ -24,34 +24,35 @@
     <img src="imgs/chemistry-logo.png" alt="logo do jogo" id="Logo">
     <h1>O Jogo de Cartas</h1>
     <h2 id="sobre">Sobre o Jogo:</h2>
-    <p>Chemistry é um jogo de cartas por turnos sobre química, cujo objetivo é acumular pontos a partir da formação de moléculas. A proposta do jogo é estimular os jogadores a aprender química de forma simples e divertida.</p>
+    <p>Chemistry é um jogo de cartas em turnos sobre química, cujo o objetivo é fazer mais pontos a partir de moléculas, o intuito do jogo é estimular os jogadores a aprenderem química de uma maneira simples e divertida.</p>
     
     <h3>Jogadores:</h3>
     <p><em>2</em></p>
     
-    <h3>O baralho possui 133 cartas, sendo:</h3>
+    <h3>O baralho possui 132 cartas, sendo:</h3>
     <div id="listadecartas">
         <ul>
             <li>72 cartas de elementos;</li>
             <li>33 cartas de ligação;</li>
-            <li>21cartas de multiplicação;</li>
+            <li>20cartas de multiplicação;</li>
             <li id="cartashl">7 cartas de gases nobres.</li>
         </ul>
     </div>
     <br>
     <div class="cartas" id="cartas">
         <h3>Cartas</h3>
+        <p id="explain">Chemistry é baseado em turnos, com X no total, o objetivo é juntar pontos a partir das cartas jogáveis:</p>
         <div class="carta-container" id="cElemento">
             <img src="imgs/cartas/carta-metal.png" alt="imagem da carta do elemento ferro, com 2 pontos de valência" class="carta">
-            <p class="carta-texto"><em>Cartas de Elemento:</em><br> São a base do jogo: o número de elétrons em sua camada de valência determina a pontuação. Esses serão os pontos que determinarão o vencedor ao fim do jogo. Essas cartas são divididas em <b>metais e ametais.</b><br></p>
+            <p class="carta-texto"><em>Cartas de Elemento:</em><br> As cartas de elemento são a base do jogo, sua camada de valência são os pontos do jogo, são esses pontos que decidem o ganhador, aquele que tiver mais pontos após os 6 turnos. As cartas de elemento são separadas em <b>metais e ametais.</b><br></p>
         </div>
         <div class="carta-container" id="cLigacao">
             <img src="imgs/ligacoes/ligacao-covalente-90deg.png" alt="imagem de uma ligação covalente" class="carta">
-            <p class="carta-texto"><em>Cartas de Ligação:</em><br>Permitem formar moléculas, com três tipos de ligação: covalente (+1 ponto), iônica (+2 pontos) e metálica (+3 pontos). A pontuação final da molécula é a soma dos <b>pontos dos elementos + pontos da ligação</b>. Para formar uma molécula válida: use a ligação correta entre átomos diferentes e respeite a quantidade necessária de ligações.<br></p>
+            <p class="carta-texto"><em>Cartas de Ligação:</em><br>Cartas de ligação servem para fazer moléculas, sendo três os tipos de ligação, covalente, iônica e metálica, valendo respectivamente 1, 2 e 3 pontos a mais para a molécula, ou seja, <b>pontos dos elementos + pontos da ligação</b>, cada molécula deve ser feita com a ligação correta e devem ser usadas a quantidade certa de ligações na molécula, sendo necessário apenas para átomos diferentes no jogo.<br></p>
         </div>
         <div class="carta-container" id="cMultiplicador">
             <img src="imgs/multiplicadores/multiplicador-x2-azul.png" alt="imagem de um multiplicador de elementos" class="carta">
-            <p class="carta-texto"><em>Cartas de Multiplicação:</em><br>Auxiliam na criação de moléculas grandes, que exigem muitos átomos. <b>Não somam pontos</b>, apenas permitem ao jogador obter átomos extras. Disponíveis em: <b>2x, 3x e 4x</b>.<br></p>
+            <p class="carta-texto"><em>Cartas de Multiplicação:</em><br>Cartas de Multiplicação São usadas para moléculas muito grandes, que precisam de muitos átomos para ser completa, porém,<b> cartas de multiplicação não somam pontos</b>, apenas ajudam o jogador a conseguir átomos suficientes para a molécula. As cartas de multiplicação estão disponiveis em <b>2x, 3x e 4x.</b><br></p>
         </div>
     </div>
     <br id="cartas-especiaishl">
@@ -59,23 +60,22 @@
     <br>
 
     <h3 class="special" id="cartas-especiais">Cartas Especiais</h3>
-    <p>No jogo, há um total de 7 cartas especiais, todas identificadas como gases nobres. Cada uma é <b>única</b> e possui habilidades exclusivas, que podem ser passivas ou ativas.</p>
+    <p>No jogo, nos temos 7 cartas especiais ao total, sendo todas elas identificadas como gases nobres, <b>todas são únicas e possuem habilidades únicas no jogo</b>, essas habilidades podem ser tanto passivas quanto ativas.</p>
     <div class="cartas">
         <img src="imgs/cartas/carta-gas-nobre.png" alt="imagem da carta de gás nobre" id="carta-gas">
     </div>
-    <p>Como ilustrado na imagem, as cartas especiais apresentam as seguintes características: coloração roxa, descrição da habilidade na parte inferior e especificação das condições de uso quando aplicáveis.</p>
+    <p>no exemplo, as cartas são roxas e possuem sua habilidade escrito na parte inferior, normalmente as cartas são passivas, mas em casos a parte, as cartas dirão suas condições</p>
     <br id="regrashl">
     <br>
     <br>
     <br>
     <h2 id="regras">-Regras do jogo-</h2>
     <h3>Início do Jogo:</h3>
-    <p>Os jogadores devem decidir por qualquer método de sua preferência quem iniciará a partida. O jogador escolhido seleciona sua <b>Carta Especial</b> primeiro. Em seguida, o outro jogador faz sua escolha.</p>
-    <p>Após isso, separe todas as cartas de ligação e embaralhe os montes de cartas separadamente. Cada jogador compra 5 cartas para formar sua mão inicial: 3 cartas padrões e 2 cartas de ligação (a não ser que uma carta especial diga o contrário).</p>
-    <p>Com as mãos formadas, o jogo tem início oficialmente.</p>
+    <p>Antes do jogo de fato começar, os jogadores devem escolher de um modo de sua preferência para escolher quem iniciará o jogo, esse deverá ser o primeiro a escolher sua Carta Especial, e logo depois o outro jogador.</p>
+    <p>logo apos isso, as cartas de ligação deveram ser separadas do restante(todas possuem o verso escrito "ligações"), e logo depois, os montes devem ser embaralhados um por um, e assim, cada jogador deverá encher sua mão com o máximo de cartas <b> [5]</b>,  pega 3 cartas padrões e 2 cartas de ligações, exceto no caso do jogador possuir o argônio, dai então o jogo começa.</p>
     <br>
     <h3>Turnos:</h3>
-    <p>O jogo funciona por turnos. Cada jogador recebe 3 energias por turno para realizar ações, que são gastas conforme a tabela:</p>
+    <p>O jogo é baseado em turnos, onde em cada turno o jogador terá <b>três energias</b>, no qual são gastas com interações do jogo, veja a tabela:</p>
     <table>
         <tr>
             <th>Interação</th>
@@ -112,9 +112,10 @@
     
     <br>
     <h3>Jogando:</h3>
-    <p>No início do jogo, os jogadores seguirão a mesma ordem usada na escolha das cartas especiais. No início do primeiro turno, o primeiro jogador usa suas energias para realizar ações. Assim que terminar, passa a vez para o próximo jogador. A sequência se repete até o final da partida.</p>
-    <p>Ao fim do jogo, somente <b>moléculas</b> completas (com 2+ elementos) são pontuadas e cada carta remanescente na sua mão <b>reduz</b> 1 ponto do seu total.</p>
-    <p>Vence aquele cuja soma dos pontos for a <b>maior</b>.</p>
+    <p>Quando o jogo começar, os jogadores jogarão na ordem da seleção das cartas, fazendo alguma(s) das interações descritas acima, assim que o turno do primeiro jogador acabar, o próximo joga, lembre-se de criar uma estratégia usada nos tipos das cartas usadas e das sua carta especial.</p>
+    <p>Apenas as <b>Moléculas</b> com 2 ou mais elementos contarão pontos, cartas jogadas avulsas e na mão dos jogadores não somarão pontos no final.</p>
+    <p>Cartas avulsas no final do jogo <b>diminuirão seus pontos em 1</b> por cada carta em mão.</p>
+    <p>Ao final do jogo, <b>vence</b> aquele cuja soma dos pontos for a <b>maior.</b></p>
 
 </body>
-</html>
+    </html>
